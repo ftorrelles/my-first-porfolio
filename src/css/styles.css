@@ -113,8 +113,7 @@ main .circle::after {
     background-color: var(--Black);
     height: 50px;
     padding: 0 2.5rem;
-    position: fixed;
-    width: 100%;
+    
     left: 0;
     top: 0;
     z-index: 1;
