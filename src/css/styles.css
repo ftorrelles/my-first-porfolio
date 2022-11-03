@@ -124,7 +124,7 @@ main .circle {
     border-radius: 50%;
     position: absolute;
     z-index: 0;
-    right: -2em;
+    right: 1em;
 
     /* position: relative;
     right: 0;
