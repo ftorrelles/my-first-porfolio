@@ -58,12 +58,64 @@ html {
     scroll-behavior: smooth;
 }
 
-main {
-    padding: 0rem 0rem;
+/* -----header .navbar------ */
+
+.navbar {
+    background-color: var(--Black);
+    height: 50px;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuNav {
+    color: var(--Cream);
+    background-color: var(--Black);
+    font-size: 0.85rem;
+    position: fixed;
+    height: 100vh;
+    top: 50px;
+    left: 0;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    transform: translateX(-150%);
+    transition: transform 0.5s;
+}
+
+.menuNav_show {
+    transform: translateX(0);
+}
+
+.menu_ham {
+    cursor: pointer;
 }
 
 /* ------------------ */
-/* -----div circle----------- */
+
+/* -----main----------- */
+
+main {
+    padding: 0rem 0rem;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ------------------ */
+/* -----main .circle----------- */
 
 main .circle {
     width: 100px;
@@ -108,50 +160,6 @@ main .circle::after {
 }
 /* ------------------ */
 
-/* -----nav------ */
-.navbar {
-    background-color: var(--Black);
-    height: 50px;
-    padding: 0 2.5rem;
-    
-    left: 0;
-    top: 0;
-    z-index: 1;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menuNav {
-    color: var(--Cream);
-    background-color: var(--Black);
-    font-size: 0.85rem;
-    position: fixed;
-    height: 100vh;
-    top: 50px;
-    left: 0;
-    width: 50%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
-    transform: translateX(-150%);
-    transition: transform 0.5s;
-}
-
-.menuNav_show {
-    transform: translateX(0);
-}
-
-.menu_ham {
-    cursor: pointer;
-}
-
-/* ------------------ */
 /* -----section home----------- */
 .home {
     padding: 5rem 2rem 1rem;
@@ -373,6 +381,7 @@ footer {
         height: auto;
         width: auto;
         flex-direction: row;
+
         gap: 2.5rem;
         transform: translateX(0);
     }
