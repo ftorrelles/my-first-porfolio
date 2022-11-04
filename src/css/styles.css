@@ -102,6 +102,9 @@ html {
 .menu_ham {
     cursor: pointer;
 }
+.menu_hamx {
+    display: none;
+}
 
 /* ------------------ */
 
