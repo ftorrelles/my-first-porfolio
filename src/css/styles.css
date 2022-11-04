@@ -57,6 +57,11 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+.bx-x {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
 
 /* -----header .navbar------ */
 
@@ -99,11 +104,11 @@ html {
     transform: translateX(0);
 }
 
-.menu_ham {
+.bx-menu {
+    color: #fff;
+    font-size: 2rem;
     cursor: pointer;
-}
-.menu_hamx {
-    display: none;
+    display: block;
 }
 
 /* ------------------ */
@@ -126,14 +131,18 @@ main .circle {
     border: 1px solid #fff;
     border-radius: 50%;
     position: absolute;
-    z-index: 0;
-    right: 1em;
-
-    /* position: relative;
-    right: 0;
-    bottom: 0; */
+    /* overflow: hidden; */
 }
 
+/* position: relative;
+    right: 0;
+    bottom: 0; */
+
+#circle1 {
+    position: absolute;
+    z-index: 0;
+    right: 1em;
+}
 #circle2 {
     position: absolute;
     z-index: 0;
@@ -364,6 +373,7 @@ footer {
     justify-content: center;
     font-size: 1.3rem;
 }
+
 /* ------------------ */
 
 /* -----@media------ */
@@ -373,7 +383,7 @@ footer {
         font-size: 18px;
     }
 
-    .menu_ham {
+    .bx-menu {
         display: none;
     }
 
