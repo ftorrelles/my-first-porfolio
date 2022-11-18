@@ -387,6 +387,12 @@ footer {
         display: none;
     }
 
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .menuNav {
         color: var(--Cream);
         background-color: var(--Black);
